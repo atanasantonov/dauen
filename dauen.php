@@ -1,11 +1,15 @@
 <?php
 /**
- * Plugin Name: Disable auto update email notifications
- * Plugin URI: https://github.com/atanasantonov/dauen
- * Description: Disable email notifications after auto updates of core, plugins and themes.
- * Version: 1.0.0
- * Author: Unax
- * Author URI: https://unax.org
+ * Plugin Name:       Disable auto update email notifications
+ * Plugin URI:        https://github.com/atanasantonov/dauen
+ * Description:       Disable email notifications after auto updates of core, plugins and themes.
+ * Version:           1.0.0
+ * Requires at least: 5.5
+ * Requires PHP:      7.2
+ * Author:            Atanas Antonov
+ * Author URI:        https://unax.org *
+ * License:           GPLv3
+ * License URI:       https://www.gnu.org/licenses/gpl.html
  */
 
 // Disable core update email notifications.
