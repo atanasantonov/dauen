@@ -1,0 +1,4 @@
+*** Disable auto update email notifications ***
+
+2021-11-01 - version 1.0.0
+* Initial release

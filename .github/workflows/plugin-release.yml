@@ -1,0 +1,25 @@
+name: Plugin Release
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@master
+      with:
+        filename: 'unax.zip'
+        exclusions: '*.git* *.github* /*node_modules/* /vendor .gitignore .distignore composer.* gulp* package.json phpcs.xml.dist README.md'
+
+    - name: Upload Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "dauen.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
