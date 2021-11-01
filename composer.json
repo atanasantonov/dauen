@@ -1,17 +1,16 @@
 {
     "name": "unax/dauen",
     "minimum-stability": "stable",
-    "license": "Apache-2.0",
+    "license": "GPLv3",
     "authors": [
         {
-            "name": "Unax",
-            "email": "contact@unax.org",
+            "name": "Atanas Antonov",
             "homepage": "https://unax.org",
             "role": "Developer"
         }
     ],
     "support": {
-        "email": "support@unax.org"
+        "email": "atanas@unax.org"
     },
     "repositories":[
         {
@@ -28,9 +27,7 @@
         "sirbrillig/phpcs-variable-analysis": "*",
         "squizlabs/php_codesniffer": "*",
         "staabm/annotate-pull-request-from-checkstyle": "*",
-        "wp-coding-standards/wpcs": "*",
-        "phpunit/phpunit": "7.*",
-        "wpackagist-plugin/woocommerce": "^4.5"
+        "wp-coding-standards/wpcs": "*"
     },
 	"extra": {
 		"installer-paths": {

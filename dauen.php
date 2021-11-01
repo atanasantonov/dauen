@@ -10,6 +10,9 @@
  * Author URI:        https://unax.org *
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl.html
+ *
+ * @package     DAUEN
+ * @author      Unax
  */
 
 // Disable core update email notifications.
@@ -32,15 +35,15 @@ add_filter( 'auto_theme_update_send_email', 'dauen_auto_update_send_email', 10, 
  * @return bool
  */
 function dauen_auto_core_update_send_email( $send, $type, $core_update, $result ) {
-    if ( $result instanceof \WP_Error ) {
-        return true;
-    }
+	if ( $result instanceof \WP_Error ) {
+		return true;
+	}
 
-    if ( 'success' !== $type ) {
-        return true;
-    }
+	if ( 'success' !== $type ) {
+		return true;
+	}
 
-    return false;
+	return false;
 }
 
 /**
@@ -52,5 +55,5 @@ function dauen_auto_core_update_send_email( $send, $type, $core_update, $result 
  * @return bool
  */
 function dauen_auto_update_send_email( $enabled, $update_results ) {
-    return false;
+	return false;
 }
